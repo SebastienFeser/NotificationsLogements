@@ -4,10 +4,10 @@
 # ─────────────────────────────────────────────────────────────
 
 # Loyer maximum en CHF par mois, charges comprises
-loyer_max: 2500
+loyer_max: 1500
 
 # Nombre de pièces minimum (à la suisse : 3.5 = 2 chambres + séjour)
-pieces_min: 3
+pieces_min: 2
 
 # Surface minimum en m² (0 = pas de filtre ; beaucoup d'annonces n'indiquent pas la surface)
 surface_min: 0
