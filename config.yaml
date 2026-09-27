@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────
+#  Alerte logement – tes critères
+#  Modifie ce fichier, commit, et c'est pris en compte au prochain passage.
+# ─────────────────────────────────────────────────────────────
+
+# Loyer maximum en CHF par mois, charges comprises
+loyer_max: 2500
+
+# Nombre de pièces minimum (à la suisse : 3.5 = 2 chambres + séjour)
+pieces_min: 3
+
+# Surface minimum en m² (0 = pas de filtre ; beaucoup d'annonces n'indiquent pas la surface)
+surface_min: 0
+
+# Zones à surveiller : des rectangles sur la carte (sud, ouest, nord, est).
+# Tu peux en ajouter, en retirer ou les commenter avec #.
+zones:
+  - nom: Genève et communes genevoises
+    sud: 46.13
+    ouest: 5.95
+    nord: 46.37
+    est: 6.31
+  # - nom: Terre Sainte et Nyon
+  #   sud: 46.28
+  #   ouest: 6.13
+  #   nord: 46.42
+  #   est: 6.27
+
+# Seulement ces codes postaux (vide = tous ceux des zones).
+# Exemple : ["1201", "1202", "1203", "1205", "1206", "1207", "1208", "1227"]
+codes_postaux: []
+
+# Ignorer les annonces dont le titre ou la description contient un de ces mots
+mots_exclus:
+  - colocation
+  - chambre à louer
+  - sous-location
+  - sous-loc
+  - meublé temporaire
+  - échange d'appartement
+  - swap
+
+# Ignorer les appartements meublés / temporaires / échanges
+exclure_meubles: false
+exclure_temporaires: true
+exclure_echanges: true
